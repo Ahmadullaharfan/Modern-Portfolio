@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    /* Changed to white for a cleaner look */
+    color: #131212;
+    /* Dark gray for text for better readability */
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #007BFF, #6610f2);
+    /* Softer gradient colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+    /* Lighter shadow for a subtle effect */
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #007BFF, #6610f2);
+    /* Updated gradient */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -7.5px;
+    top: 0;
+    background: linear-gradient(135deg, #007BFF, #6610f2);
+    /* Updated gradient */
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    /* Light gray for the skill bar background */
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #007BFF, #6610f2);
+    /* Gradient for skill progress */
+    transition: width 1s ease-in-out;
+}
+
+.skill-container {
+    background-color: #ffffff;
+    /* Background color for the entire skill component */
+    padding: 20px;
+    /* Padding for better spacing */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+}
+
+.project-card {
+    background: white;
+    /* Changed to white for project cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Softer shadow */
+}
+
+.contact-input {
+    background-color: #f8f9fa;
+    /* Light background for inputs */
+    border: 1px solid #ced4da;
+    /* Light gray border */
+    transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+    border-color: #007BFF;
+    /* Accent color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    /* Accent shadow on focus */
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #007BFF, #6610f2);
+    /* Softer gradient */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    /* Lighter shadow on hover */
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
