@@ -9,6 +9,15 @@ This repository is a single-page portfolio built with React and Vite. It contain
 Prerequisites: Node.js 16+ (or an LTS version) and npm/yarn installed.
 
 1. Install dependencies
+## Project: Modern Portfolio
+
+This repository is a single-page portfolio built with React and Vite. It contains a small component set (`Navbar`, `Hero`, `About`, `Skills`, `Projects`, `Contact`, `Footer`) and uses utility classes in the markup. The goal is a clean, responsive, and professional personal portfolio site.
+
+## Quick start (run locally)
+
+Prerequisites: Node.js 16+ (or an LTS version) and npm/yarn installed.
+
+1. Install dependencies
 
 ```powershell
 npm install
@@ -35,8 +44,23 @@ npm run preview
 ## What I changed / recent fixes
 
 - Fixed JSX parsing issues in `src/components/Skills.jsx` (removed stray text/backticks, corrected `className` typos and inline style usage).
+- Added meta tags and a favicon link to `index.html`.
+- Polished global styles in `src/App.css` (gradients, focus states, and skill bar styles).
 
 If you still see a parse error in the browser from Vite/Babel, restart the dev server after pulling the changes and clear the browser cache.
+
+## Template conversion & local improvements
+
+- Template conversion: a downloaded/static HTML/CSS template was converted into a React app by splitting the markup into reusable components and moving assets under `src/assets`.
+- Components created/updated: `Navbar`, `Hero`, `About`, `Skills`, `Projects`, `Contact`, `Footer` (each component holds its markup and small logic/state where required).
+- Notable local improvements you made or I applied in this branch:
+  - Converted template pages into React components and wired them in `src/App.jsx`.
+  - Fixed and reimplemented `src/components/Skills.jsx` (JSX, accessible progress bars, and a tools grid).
+  - Added meta and Open Graph tags to `index.html` for better social sharing.
+  - Improved `src/App.css` with polished visuals (gradients, skill bars, focus outlines).
+  - Small README and documentation updates (this file).
+
+If you made other local improvements, tell me what they are and I'll add them verbatim to this section.
 
 ## Recommended improvements to make this look and behave like a professional portfolio
 
