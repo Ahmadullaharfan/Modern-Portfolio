@@ -51,7 +51,7 @@ function About() {
                             </div>
                         </div>
                         <div className="flex space-x-4">
-                            <a href="#" className="px-6 py-3 rounded-full btn-primary font-medium  text-slate-100">Download CV</a>
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-full btn-primary font-medium  text-slate-100">Download CV</a>
                             <a href="#contact" className="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition">Contact Me</a>
                         </div>
                     </div>
