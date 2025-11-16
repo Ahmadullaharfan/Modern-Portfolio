@@ -11,13 +11,13 @@ function Navbar() {
         <nav className="fixed w-full bg-darker/80 backdrop-blur-sm z-50 shadow-lg">
             <div className="container mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
-                    <a href="#" className="text-2xl font-bold gradient-text">Portfolio</a>
+                    <a href="#" className="text-2xl ml-20 font-bold gradient-text">Portfolio</a>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="text-slate-200 hover:text-primary focus:outline-none">
                             <i className="fas fa-bars text-2xl"></i>
                         </button>
                     </div>
-                    <div className={`hidden md:flex  text-gray-800 space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
+                    <div className={`hidden md:flex mr-20   text-gray-800 space-x-8 ${isMenuOpen ? 'block' : 'hidden'}`}>
                         <a href="#home" className="nav-link active">Home</a>
                         <a href="#about" className="nav-link">About</a>
                         <a href="#skills" className="nav-link">Skills</a>
